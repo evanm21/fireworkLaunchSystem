@@ -126,6 +126,8 @@ def _arm_mode():
     with _state_lock:
         ARMED = True
         _set_led(True)
+        for relay, pin in RELAY_MAP:
+            _ensure_pin(pin)
 
 
 def _pulse_relay(relay: int, ms: int = PULSE_MS):
