@@ -76,10 +76,14 @@ LED_PIN = 12          # optional indicator LED (set to None to disable)
 
 # Relay‑to‑GPIO mapping – EDIT to match your wiring
 RELAY_MAP: Final[dict[int, int]] = {
-    1: 18,
-    2: 23,
-    3: 24,
-    4: 25,
+    1: 2,
+    2: 3,
+    3: 4,
+    4: 17,
+    5: 27,
+    6: 22,
+    7: 10,
+    8: 9
 }
 
 # ─── GLOBAL STATE ─────────────────────────────────────────────────
